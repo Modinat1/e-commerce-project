@@ -8,6 +8,6 @@ function carouselOpener(){
     }else{
         index = 0;
     }
-images.style.transform = `translateX(${-index * 550}px )`;
+images.style.transform = `translateX(${-index * 600}px )`;
 }
 setInterval(carouselOpener, 2000);

@@ -8,7 +8,7 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .container{
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
 }
 header{
@@ -39,7 +39,7 @@ header nav a:hover{
   display: grid;  
   grid-template-columns: repeat(2, 1fr); 
   place-items: center; 
-  margin: 30px  auto;
+  margin: 30px auto;
 }
 .showcase-area .aside{
     line-height: 1.2;
@@ -54,7 +54,7 @@ header nav a:hover{
     letter-spacing: 1.5px;
 }
 .carousel{
-    width: 550px;
+    width: 600px;
     height: 500px;
     overflow: hidden;
 }
@@ -65,7 +65,7 @@ header nav a:hover{
 }
 .showcase-img{
     object-fit: cover;
-    width: 550px;
+    width: 600px;
     height: 500px;
 }
 
@@ -101,9 +101,10 @@ header nav a:hover{
 /*Gallery*/
 .gallery .gallery-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5px;
+    place-items: center;
 }
 .gallery h2{
     font-size: 40px;
@@ -121,6 +122,47 @@ footer{
     padding: 20px;
     margin-top: 20px;
     text-align: center;
+}
+
+@media (max-width: 900px){
+    .showcase-area .container{
+        display: flex;  
+        flex-direction: column; 
+        margin-top: 10px;
+      }
+      .showcase-area .aside{
+        text-align: center;
+      }
+      .showcase-area h2{
+          font-size: 35px;
+      }
+      .showcase-area p{
+          margin-top: 20px;
+      }
+      .carousel{
+          margin: 10px;
+      }
+      .inner-overlay{
+          padding: 25px;
+      }
+      .inner-overlay h3{
+          font-size: 20px;
+      }
+
+      .inner-overlay h2{
+          font-size: 30px;
+        text-align: center;
+    }
+    .inner-overlay p{
+        text-align: center;
+    }
+    .gallery .gallery-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery h2{
+        font-size: 20px;
+    }
 }
 
 
